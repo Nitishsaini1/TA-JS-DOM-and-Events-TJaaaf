@@ -33,3 +33,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+.heading{
+    text-align: center;
+    padding: 10px;
+}
+ div{
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+
+ }
+
+ section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+ }
