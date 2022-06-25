@@ -1,32 +1,38 @@
-let box = document.querySelector('.boxes');
+let section = document.querySelector('section');
 
-// random numbers and their boxes 
-// random colors 
-// changing color in every single box while moving mouse
+for(i=0;i< 500;i++){
+let div = document.createElement('div');
+let h2 = document.createElement('h2');
+div.classList.add('box')
+div.append(h2)
+section.append(div);
+}
+let allBox = document.querySelectorAll('.box');
 
-//  1. random number 
 
-for (let i=0; i<500; i++){
-    let smallBox = document.createElement("div");
-    smallBox.className = "small-box";
-    smallBox.textContent = `${Math.floor(Math.random() * 500)}`;
-    box.append(smallBox);
 
+let getRandomColor=() => {
+    let letters = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        let randomColor = Math.floor(Math.random() * 16);   
+        color+= letters[randomColor];
+    }
+    return color;
 }
 
-function getRandomColor(){
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    // return `rgb(${Math.floor(math.random() * 255)})`;
-
+let getRandomNumber=() => {
+    let randomNumber = Math.floor(Math.random() * 500);  
+    return randomNumber;
 }
 
-function handler(){
-    let smallBox = document.querySelectorAll(".small-box");
-    smallBox.forEach((element) => {
-         element.textContent = `${Math.floor(Math.random() * 500)}`;
-         element.getElementsByClassName.backgroundColor = getRandomColor();
-    });
-}    
+function handleMouseMove() {
+  allBox.forEach((a)=>{
+    let color = getRandomColor();
+    a.innerHTML= getRandomNumber();
+    a.style.backgroundColor = color;
+}) }
 
-box.addEventListener("mousemove", handler);
+
+section.addEventListener("mousemove", handleMouseMove)
