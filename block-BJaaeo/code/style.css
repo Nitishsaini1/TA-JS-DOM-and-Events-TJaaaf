@@ -29,7 +29,7 @@ ol,
 ul {
   list-style: none;
 }
-.h1{
+.heading{
     text-align: center;
     margin-top: 2rem;
 }
@@ -55,7 +55,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 8px;
+    gap: 8px; 
     grid-template-areas: 
     "plus minus multiply divide"
     "seven eight nine equal"
@@ -63,3 +63,44 @@ ul {
     "one two three equal"
     "dot zero clear equal";
 }
+
+.plus,.minus, .multiply, .divide{
+    background-color: rgb(126, 29, 134);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 1rem;
+ }
+.dot,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero
+{
+   background-color: rgb(190, 190, 190);
+   border: none;
+   border-radius: 7px;
+   color: black;
+   padding: 1rem;
+}
+.clear{
+    background-color: rgb(51, 30, 24);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 1rem;
+ }
+
+ .equal{
+    background-color: rgb(51, 30, 24);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 1rem;
+ }
