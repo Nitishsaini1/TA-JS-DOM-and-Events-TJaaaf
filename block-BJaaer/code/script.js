@@ -22,11 +22,9 @@ function handleSubmit(event){
    list[6].innerText=`Book Genre: ${userInfo.genre}`
    list[7].innerText=`${userInfo.terms? 'You agree to Terms and Conditions':'You have not agreed to Terms and Conditions'}`
    message.style.display= "block";
-
 }
 form.addEventListener("submit",handleSubmit);
 close.addEventListener("click",function(event){
     form.style.display = "flex";
-    message.style.display= "none";
-    
+    message.style.display= "none";  
 })
