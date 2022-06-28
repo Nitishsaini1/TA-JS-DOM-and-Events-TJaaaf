@@ -1,5 +1,4 @@
 /* CSS Reset */
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -92,8 +91,6 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
-
-
 
 .message{
   width: 600px;
