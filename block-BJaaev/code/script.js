@@ -2,7 +2,7 @@ let inputText = document.querySelector("#text");
 
 let root = document.querySelector("ul");
 
-let allTodos = JSON.parse(localStorage.getItem("todos")) || [];
+let allTodos = localStorage.getItem("todos") || [];
 
 function handleToggle(event) {
     let id = event.target.dataset.id;
@@ -47,7 +47,7 @@ function handleInput(event) {
         let todo = { name: event.target.value, isDone: false,};
         allTodos.push(todo);
         event.target.value = "";
-        localStorage.setItem("todo", JSON.stringify(allTodos));
+        localStorage.setItem("todo", allTodos);
         createUI();
     }
 }
