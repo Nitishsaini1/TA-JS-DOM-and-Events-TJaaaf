@@ -1,6 +1,6 @@
 {
-    "name" : "todo list",
-    "description" : "todo list",
+    "name" : "Todo Application",
+    "description" : "Todo Application",
     "version" : "1.0.0",
     "manifest_version" : 2,
     "chrome_url_overrides" : {

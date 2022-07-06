@@ -1,7 +1,5 @@
 let inputText = document.querySelector("#text");
-
 let root = document.querySelector("ul");
-
 let allTodos = localStorage.getItem("todos") || [];
 
 function handleToggle(event) {
